@@ -1,0 +1,179 @@
+@font-face {
+  font-family: homePageHeadingFont;
+  src: url('../Inconsolata-Regular.ttf');
+}
+.mcontent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  height: 9rem;
+  position: relative;
+  bottom: 9.2rem;
+  opacity: 0;
+  text-align: center;
+  background-color: rgba(187, 204, 226, 0.7);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.mcontent:hover .mdetails {
+  top: -30px;
+  opacity: 1;
+}
+.mcontent:hover {
+  opacity: 1;
+}
+
+.msponser:hover img {
+  opacity: 0.45;
+  box-shadow: none;
+}
+
+.mdetails {
+  position: relative;
+  color: #161616;
+  top: 21%;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.mdetails h3 {
+  color: rgb(68, 67, 67) !important;
+}
+.msponsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 84vw; */
+  position: relative;
+  top: 10%;
+  min-height: 100vh;
+  /* margin: auto; */
+  background-image: url('./images//BG.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.msponser img {
+  height: 9rem;
+  box-shadow: 0 6px 6px grey;
+}
+.msponsers h1 {
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 60px;
+  font-weight: 500;
+  font-family: homePageHeadingFont;
+  background-clip: text;
+  color: #d12727;
+}
+.msponsorBox {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  background-color: #3c3c3c;
+  background-image: url('./images/FAIN.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 84%;
+  height: 75vh;
+  overflow-y: auto;
+}
+.msponser {
+  display: inline-block;
+  width: 230px;
+  margin: 5%;
+  height: 20vh;
+  top: 15%;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* #msponser1 img {
+  box-shadow:  5px 5px  white;
+}
+#msponser2 img {
+  box-shadow:  5px 5px  white;
+}
+#msponser3 img {
+  box-shadow:  5px 5px  white;
+}
+#msponser4 img {
+  box-shadow:  5px 5px  white;
+}
+#msponser5 img {
+  box-shadow:  5px 5px  black;
+}
+#msponser6 img {
+  box-shadow:  5px -5px 5px  5px white;
+} */
+
+@media (max-width: 428px) {
+  .msponser {
+    width: 55%;
+    position: relative;
+    top: 31%;
+  }
+  .msponsers {
+    background-image: url('./images/FAIN.png');
+    height: 100vh;
+  }
+  .msponser {
+    opacity: 0.5;
+  }
+  .scale {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  msponsers h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .msponsorBox {
+    height: 90vh;
+    padding-bottom: 100%;
+    /* padding-top: 50%; */
+    width: 100%;
+    background-image: none;
+    background: none;
+  }
+  .mdetails {
+    padding: 25px;
+  }
+  .mcontent:hover .mdetails {
+    top: -10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .msponsers {
+    align-items: center;
+  }
+  .msponsers h1 {
+    left: 0;
+    font-size: 45px;
+  }
+  .msponser {
+    margin: 3rem;
+  }
+}
+
+@media (min-width: 429px) and (max-width: 1071px) {
+  .msponser {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .mashhomexxx {
+    display: none;
+  }
+}
