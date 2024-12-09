@@ -237,11 +237,11 @@ const DashBoard = () => {
       });
   };
   const handleDownloadCertificates = () => {
-//     toast.error('This feature is temporarily blocked!', {
-//       theme: 'dark',
-//       position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
-//       autoClose: 2000
-//     });
+    //     toast.error('This feature is temporarily blocked!', {
+    //       theme: 'dark',
+    //       position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
+    //       autoClose: 2000
+    //     });
     toast.info('Please wait while we are processing your request!', {
       theme: 'dark',
       position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
