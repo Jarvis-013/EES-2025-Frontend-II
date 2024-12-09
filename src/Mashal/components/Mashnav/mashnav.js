@@ -274,8 +274,7 @@ const UdgamNav = (props) => {
               className="about hovered"
               // ind="#about"
               onClick={abouts}
-              id={props.active === '#about' ? 'active' : ''}
-            >
+              id={props.active === '#about' ? 'active' : ''}>
               <Link to="/mashal/aboutus" className="game-changer" style={{ textDecoration: 'none' }}>
                 {' '}
                 <AiOutlineInfoCircle className="info" />
@@ -296,8 +295,7 @@ const UdgamNav = (props) => {
               className="sposors hovered"
               // ind="#sponsors"
               onClick={sponsors}
-              id={props.active === '#sponsors' ? 'active' : ''}
-            >
+              id={props.active === '#sponsors' ? 'active' : ''}>
               <Link to="/mashal/sponsors" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiDollarCircle className="info" />
                 <p>Sponsors</p>
